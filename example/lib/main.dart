@@ -31,16 +31,16 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List<Section> sections = [];
-  double listItemHeight = 100;
+  double listItemHeight = 80;
   @override
   void initState() {
     super.initState();
     double offsetStart = 0;
     List<ChildItem> children = List.generate(
-      3,
+      10,
       (index) => const Child(),
     );
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 11; i++) {
       Header header = Header(
         key: ValueKey(i),
         name: 'Header item $i',
@@ -88,8 +88,6 @@ class _MyHomePageState extends State<MyHomePage> {
         body: CustomScrollView(
           slivers: [
             SliverAppBar(
-              expandedHeight: 200,
-              collapsedHeight: kToolbarHeight,
               pinned: true,
               title: Text(widget.title),
             ),
@@ -109,12 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
               sections: sections,
               headerBuilder: buildHeader,
               childBuilder: buildChild,
-              startOffset: 200 - kToolbarHeight,
-              customFooterWidget: const Center(
-                child: FlutterLogo(
-                  size: 200,
-                ),
-              ),
             )
           ],
         ),

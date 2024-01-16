@@ -70,7 +70,9 @@ class SliverFixedExtendListWithTabs extends StatefulWidget {
   ///
   ///  in [CustomScrollView] before [SliverFixedExtendListWithTabs]
   ///
-  ///  exist some other slivers.
+  ///  exist some other slivers which are expandable for example [SliverAppBar]
+  ///
+  ///  with [SliverAppBar.expandedHeight] and [SliverAppBar.collapsedHeight] params set.
   final double startOffset;
 
   /// The indicator of the tab bar item.
