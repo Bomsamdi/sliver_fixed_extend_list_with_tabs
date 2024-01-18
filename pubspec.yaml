@@ -1,6 +1,6 @@
 name: sliver_fixed_extend_list_with_tabs
-description: "A Flutter package that provides a sliver widget with a customizable tab bar and a fixed-extend list of items, including parents and children. If the last section (parent and its children) is too short to reach the top of the screen, the package offers a customizable footer to fill the missing space."
-version: 0.0.1
+description: "A Flutter package that provides a sliver widget with a customizable tab bar and a fixed-extend list of items"
+version: 0.0.2
 homepage: https://github.com/Bomsamdi/sliver_fixed_extend_list_with_tabs
 
 environment:
