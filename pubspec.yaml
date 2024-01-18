@@ -1,6 +1,6 @@
 name: sliver_fixed_extend_list_with_tabs
 description: "A Flutter package that provides a sliver widget with a customizable tab bar and a fixed-extend list of items"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/Bomsamdi/sliver_fixed_extend_list_with_tabs
 
 environment:
